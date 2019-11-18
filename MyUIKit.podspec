@@ -37,9 +37,9 @@ TODO: Add long description of the pod here.
       :execution_position => :before_compile
   }
   
-  # s.resource_bundles = {
-  #   'MyUIKit' => ['MyUIKit/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'MyUIKit' => ['MyUIKit/Assets/**.*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -17,6 +17,9 @@
 		A020304D8B1AA37D935FB860E8471741 /* design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A7CEC1DE321287CA0CD3A08AEF2C43 /* design.swift */; };
 		B58DD8F527A3AC224A430B2D648F0FD4 /* design+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316DA546588868A85E08AB4B8251FCA7 /* design+utils.swift */; };
 		BAFC357D9EAB71C5C346A4F7FE0125BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C6126EAE2382D23200EDD053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6126EAD2382D23200EDD053 /* Assets.xcassets */; };
+		C6126EB02382D29D00EDD053 /* UIImage+MyUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6126EAF2382D29D00EDD053 /* UIImage+MyUIKit.swift */; };
+		C6126EB22382D2DD00EDD053 /* MyUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6126EB12382D2DD00EDD053 /* MyUIKit.swift */; };
 		D3CD0AF2BCC88DDF06B92E2193BEDB23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		A0A175B2CD4E59553174AFAA0C0B6892 /* MyUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MyUIKit-prefix.pch"; sourceTree = "<group>"; };
 		AD6E93C18FE6F016F2EE2440FD706ADC /* Pods-MyUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB39EA3743A2E7134629574537EB3571 /* Pods-MyUIKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyUIKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		C6126EAD2382D23200EDD053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MyUIKit/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		C6126EAF2382D29D00EDD053 /* UIImage+MyUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+MyUIKit.swift"; path = "MyUIKit/Classes/UIImage+MyUIKit.swift"; sourceTree = "<group>"; };
+		C6126EB12382D2DD00EDD053 /* MyUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyUIKit.swift; path = MyUIKit/Classes/MyUIKit.swift; sourceTree = "<group>"; };
 		CABBEDDC3E2313CC4A11F76304B57C7D /* MyUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MyUIKit-umbrella.h"; sourceTree = "<group>"; };
 		E1E752F0C3436BCE9BEE5809A7FD1DE6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E5A3C41104C28B4C84747287923F900C /* MyUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MyUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -106,8 +112,11 @@
 			children = (
 				53A7CEC1DE321287CA0CD3A08AEF2C43 /* design.swift */,
 				316DA546588868A85E08AB4B8251FCA7 /* design+utils.swift */,
+				C6126EAD2382D23200EDD053 /* Assets.xcassets */,
+				C6126EAF2382D29D00EDD053 /* UIImage+MyUIKit.swift */,
 				47EC81D5A1390445D4972A56A645564C /* Pod */,
 				EDFCEF9326457B3B93AFA13FC9B294CB /* Support Files */,
+				C6126EB12382D2DD00EDD053 /* MyUIKit.swift */,
 			);
 			name = MyUIKit;
 			path = ../..;
@@ -345,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6126EAE2382D23200EDD053 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +392,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6126EB02382D29D00EDD053 /* UIImage+MyUIKit.swift in Sources */,
 				B58DD8F527A3AC224A430B2D648F0FD4 /* design+utils.swift in Sources */,
+				C6126EB22382D2DD00EDD053 /* MyUIKit.swift in Sources */,
 				A020304D8B1AA37D935FB860E8471741 /* design.swift in Sources */,
 				5A3FD4AE18A237B4DE032572CB91F465 /* MyUIKit-dummy.m in Sources */,
 			);
