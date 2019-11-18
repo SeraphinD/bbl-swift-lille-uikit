@@ -7,6 +7,9 @@
 
 import Foundation
 
+public var colors: MyColorProtocol { return MyUIKit.colors }
+public var textStyles: MyTextStyleProtocol { return MyUIKit.textStyles }
+
 final class MyUIKit {
     
     fileprivate static var colors: MyColorProtocol!
