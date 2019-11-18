@@ -7,13 +7,13 @@
 
 import Foundation
 
-public var colors: MyColorProtocol { return MyUIKit.colors }
-public var textStyles: MyTextStyleProtocol { return MyUIKit.textStyles }
+public var colors: MyColorProtocol { return MyUIKit.shared.colors }
+public var textStyles: MyTextStyleProtocol { return MyUIKit.shared.textStyles }
 
 final class MyUIKit {
     
-    fileprivate static var colors: MyColorProtocol!
-    fileprivate static var textStyles: MyTextStyleProtocol!
+    fileprivate var colors: MyColorProtocol!
+    fileprivate var textStyles: MyTextStyleProtocol!
     
     private init() {}
     public static let shared = MyUIKit()
@@ -25,8 +25,8 @@ final class MyUIKit {
         return Bundle(url: bundleUrl)
     }
     
-    public static func initialize(colors: MyColorProtocol,
-                                  textStyles: MyTextStyleProtocol) {
+    public func initialize(colors: MyColorProtocol,
+                           textStyles: MyTextStyleProtocol) {
         self.colors = colors
         self.textStyles = textStyles
     }
