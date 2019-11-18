@@ -1,0 +1,16 @@
+PODS:
+  - MyUIKit (0.1.0)
+
+DEPENDENCIES:
+  - MyUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  MyUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MyUIKit: 660bbb8f03bc31e6b830cc1037eec9ae9726d57a
+
+PODFILE CHECKSUM: fa1f41563039e906ab8f8c1dfe13eb1d300867ef
+
+COCOAPODS: 1.8.3
