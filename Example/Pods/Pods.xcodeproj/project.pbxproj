@@ -22,6 +22,7 @@
 		9B46A458899720B792F6C11FCAA8399F /* Pods-MyUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 987910CE63E3D25538DBBEF4A7B51EF6 /* Pods-MyUIKit_Tests-dummy.m */; };
 		B7DEE392F36E6AB3BF4CE8E99D6D307C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		BAFC357D9EAB71C5C346A4F7FE0125BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C658C26F2382D9EE0082E3B7 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658C26E2382D9EE0082E3B7 /* UIView+Animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,7 @@
 		0CA9BCC07FB3E9A6686E3A88DEBCCBDF /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MyUIKit/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		0EA88F707717CB014F2956B29E44359D /* MyUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MyUIKit-umbrella.h"; sourceTree = "<group>"; };
 		1292FB59476AA12A41EF472424A2EF1E /* design.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = design.swift; path = MyUIKit/Classes/design.swift; sourceTree = "<group>"; };
-		15F2AA945FD5A6B4E964717B4B1348CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		15F2AA945FD5A6B4E964717B4B1348CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1B64065A4874FBFA1A802CFCCF764C9F /* MyUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MyUIKit-Info.plist"; sourceTree = "<group>"; };
 		2A5F0AAECFCE03D7F73130AB39EB0F4E /* Pods-MyUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2E1A11BC94DE7999D2CBD351A5B54D0E /* MyUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MyUIKit.xcconfig; sourceTree = "<group>"; };
@@ -63,27 +64,28 @@
 		3EAC63C6CCDC0E3279A6E62363CE7B36 /* Pods-MyUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		43811816A4CA02CBEE4EA68A5190616A /* Pods-MyUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyUIKit_Example.modulemap"; sourceTree = "<group>"; };
 		50FF09623FE7AA00E0F0AFA8E57B8581 /* Pods-MyUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		53E5C656994D4FE8651BABA4F7CD98D3 /* MyUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MyUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		55EA52E34AF8DA17934ACCABD3AFE0CB /* Pods_MyUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyUIKit_Example.framework; path = "Pods-MyUIKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E5C656994D4FE8651BABA4F7CD98D3 /* MyUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MyUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		55EA52E34AF8DA17934ACCABD3AFE0CB /* Pods_MyUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CB9FF27088808F88197FB53A761E5D /* Pods-MyUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5F2C6507F0E766E3774FA0AD04D99B4D /* Pods-MyUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		697D709631F9B57233EAEE22B95C9501 /* Pods-MyUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7A604902FC454327A416057D124ADFED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7A604902FC454327A416057D124ADFED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		853806434FFC0684FA6CD984FD599970 /* design+utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "design+utils.swift"; path = "MyUIKit/Classes/design+utils.swift"; sourceTree = "<group>"; };
 		8C6E413D53211D73E0551B0326CCF2F9 /* Pods-MyUIKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyUIKit_Example-Info.plist"; sourceTree = "<group>"; };
-		907C5399482314157238F8F363C7B175 /* Pods_MyUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyUIKit_Tests.framework; path = "Pods-MyUIKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		907C5399482314157238F8F363C7B175 /* Pods_MyUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B5D8FA5628E8C03D016963148116F1 /* MyUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MyUIKit-prefix.pch"; sourceTree = "<group>"; };
 		987910CE63E3D25538DBBEF4A7B51EF6 /* Pods-MyUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AD6E93C18FE6F016F2EE2440FD706ADC /* Pods-MyUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB39EA3743A2E7134629574537EB3571 /* Pods-MyUIKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyUIKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		C658C26E2382D9EE0082E3B7 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "MyUIKit/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
 		DCFB4661DE1ACE5375388511E7EBBA18 /* MyUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MyUIKit.modulemap; sourceTree = "<group>"; };
 		E6D72E09CA8D456DB0ECDFC5725CF9CA /* Pods-MyUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E6F9A0E6F8F2728668599DB3EF8AB77A /* Pods-MyUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyUIKit_Tests.modulemap"; sourceTree = "<group>"; };
 		EE8A3FE21C800E5B0F4FD4D0E8D6EE95 /* ResourceBundle-MyUIKit-MyUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MyUIKit-MyUIKit-Info.plist"; sourceTree = "<group>"; };
-		EEF99DE38A7E9D3D7576CD9A77AD5C95 /* MyUIKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyUIKit.bundle; path = "MyUIKit-MyUIKit.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF99DE38A7E9D3D7576CD9A77AD5C95 /* MyUIKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyUIKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62B314A04BCAD6A0FE1C2473E5E8A74 /* Pods-MyUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		F73E88BC571827542C4FC3B2B3C3C511 /* MyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MyUIKit.framework; path = MyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F73E88BC571827542C4FC3B2B3C3C511 /* MyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F758511BA15A70E188141A8D5A2B13E5 /* MyUIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MyUIKit.swift; path = MyUIKit/Classes/MyUIKit.swift; sourceTree = "<group>"; };
 		F8F19E2B7F5CE1CC204A22D66E89B805 /* Pods-MyUIKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyUIKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FDF1BE943B7998E809DB3FB604F0D7E1 /* MyUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MyUIKit-dummy.m"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				693F748B38FB6471102615DABB4FCADA /* Pod */,
 				6F8B9035E7021EC0BA7CCE0E08A38239 /* Resources */,
 				239AEE4BB88E21A9734D712AFBAB5109 /* Support Files */,
+				C658C26E2382D9EE0082E3B7 /* UIView+Animations.swift */,
 			);
 			name = MyUIKit;
 			path = ../..;
@@ -459,6 +462,7 @@
 				13FC6B929119BA2BC0BE40708085AD26 /* MyUIKit-dummy.m in Sources */,
 				4C655574611E29DF75B703A9B2B12E6F /* MyUIKit.swift in Sources */,
 				46DFE1E13DD570D2AF37C9B4DFC6F814 /* UIImage+MyUIKit.swift in Sources */,
+				C658C26F2382D9EE0082E3B7 /* UIView+Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,8 +807,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
