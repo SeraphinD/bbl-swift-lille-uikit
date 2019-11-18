@@ -1,10 +1,3 @@
-//
-//  design+utils.swift
-//  ARIUIKit
-//
-//  Created by Séraphin Desumeur on 29/08/2019.
-//
-
 import Foundation
 
 public extension UIColor {

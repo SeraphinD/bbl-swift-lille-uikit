@@ -1,11 +1,3 @@
-//
-//  UIView+Animations.swift
-//  ARIUIKit
-//
-//  Created by Seraphin DESUMEUR on 28/08/2018.
-//  Copyright © 2018 Seraphin DESUMEUR. All rights reserved.
-//
-
 import UIKit
 
 extension UIView {

@@ -1,10 +1,3 @@
-//
-//  UIImage+MyUIKit.swift
-//  MyUIKit
-//
-//  Created by Séraphin Desumeur on 18/11/2019.
-//
-
 import Foundation
 
 extension UIImage {
