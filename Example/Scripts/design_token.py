@@ -13,15 +13,17 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 is_protocol = False
 filename = sys.argv[1]
+token = sys.argv[2]
 
-if len(sys.argv) > 2:
+if len(sys.argv) > 3:
   filename = sys.argv[2]
+  token = sys.argv[3]
   if sys.argv[1] == "-p":
     is_protocol = True
 
 def getJsonFile(file):   
 
-  r = requests.get('https://raw.githubusercontent.com/SeraphinD/bbl-swift-lille-token/master/' + file, headers=headers, verify=False)
+  r = requests.get('https://raw.githubusercontent.com/SeraphinD/bbl-swift-lille-token/master/' + token + "/" + file, headers={'Cache-Control': 'no-cache'})
 
   if r.ok:
     return json.loads(r.content.decode('utf-8'))
@@ -75,14 +77,14 @@ def renderTextStyles(json):
           textstyle["color_name"] = color["name"].replace("-", "_")
           textstyle["color_tint"] = color["tint"]
           template = u'''
-      var {{name}}_{{color_name}}_{{color_tint}}: MyTextStyle { get }
+      var {{name}}_{{color_name}}_{{color_tint}}: TextStyle { get }
           '''
           rendering = pystache.render(template, textstyle)
           file.write(rendering)
     file.write("\n" + "}")
     return
 
-  file.write("\n\n" + "final class ARITextStyle: MyTextStyleProtocol {" + "\n")
+  file.write("\n\n" + "final class MyTextStyle: MyTextStyleProtocol {" + "\n")
   fonts = []
   for item in json:
     for textstyle in item["textstyles"]:
@@ -104,7 +106,7 @@ def renderTextStyles(json):
         textstyle["color_tint"] = color["tint"]
         fonts.append(textstyle["safe_font_name"])
         template = u'''
-    var {{name}}_{{color_name}}_{{color_tint}}: MyTextStyle {
+    var {{name}}_{{color_name}}_{{color_tint}}: TextStyle {
       return MyTextStyle(color: colors.{{color_name}}(tint: {{color_tint}}),
                        fontFamily: "{{safe_font_name}}", 
                        fontSize: {{fontSize}}, 
@@ -125,10 +127,10 @@ def renderTextStyles(json):
 
 def getTokens():
   with open(filename, 'w'): pass
-  colors = getJsonFile('color-token-1.json')
+  colors = getJsonFile('colors.json')
   renderColors(colors)
-  #textstyles = getJsonFile('textstyles-token.json')
-  #renderTextStyles(textstyles)
+  textstyles = getJsonFile('textstyles.json')
+  renderTextStyles(textstyles)
 
 getTokens()
 

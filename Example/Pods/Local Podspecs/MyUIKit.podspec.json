@@ -22,7 +22,7 @@
   "ios": {
     "script_phases": {
       "name": "Design Token Script",
-      "script": "if [ -d \"../../${PRODUCT_NAME}/Classes\" ]; then\ncd ..\npython3 Scripts/design_token.py -p \"../${PRODUCT_NAME}/Classes/design.swift\"\nfi",
+      "script": "if [ -d \"../../${PRODUCT_NAME}/Classes\" ]; then\ncd ..\npython3 Scripts/design_token.py -p \"../${PRODUCT_NAME}/Classes/design.swift\" \"1\"\nfi",
       "execution_position": "before_compile"
     }
   }

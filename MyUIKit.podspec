@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   
   s.ios.script_phase = {
       :name => 'Design Token Script',
-      :script => 'if [ -d "../../${PRODUCT_NAME}/Classes" ]; then'+"\n"+'cd ..'+"\n"+'python3 Scripts/design_token.py -p "../${PRODUCT_NAME}/Classes/design.swift"'+"\n"+'fi',
+      :script => 'if [ -d "../../${PRODUCT_NAME}/Classes" ]; then'+"\n"+'cd ..'+"\n"+'python3 Scripts/design_token.py -p "../${PRODUCT_NAME}/Classes/design.swift" "1"'+"\n"+'fi',
       :execution_position => :before_compile
   }
   
