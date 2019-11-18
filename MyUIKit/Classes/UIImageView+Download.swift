@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension UIImageView {
+public extension UIImageView {
     func downloaded(from url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -22,8 +22,9 @@ extension UIImageView {
             }
         }.resume()
     }
-    func downloaded(from link: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
-        guard let url = URL(string: link) else { return }
+    
+    func downloaded(from path: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+        guard let url = URL(string: path) else { return }
         downloaded(from: url, contentMode: mode)
     }
 }
