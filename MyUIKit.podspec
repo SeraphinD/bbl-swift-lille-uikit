@@ -28,12 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/SeraphinD/bbl-swift-lille-uikit.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
+  s.swift_version = "4.0"
 
   s.source_files = 'MyUIKit/Classes/**/*'
   
   s.ios.script_phase = {
       :name => 'Design Token Script',
-      :script => 'if [ -d "../../${PRODUCT_NAME}/Classes" ]; then'+"\n"+'cd ..'+"\n"+'python3 Scripts/design_token.py -p "../${PRODUCT_NAME}/Classes/design.swift" "1"'+"\n"+'fi',
+      :script => 'if [ -d "../../${PRODUCT_NAME}/Classes" ]; then'+"\n"+'cd ..'+"\n"+'/usr/local/bin/python3 Scripts/design_token.py -p "../${PRODUCT_NAME}/Classes/design.swift" "1"'+"\n"+'fi',
       :execution_position => :before_compile
   }
   
