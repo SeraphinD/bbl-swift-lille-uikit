@@ -25,5 +25,10 @@
       "script": "if [ -d \"../../${PRODUCT_NAME}/Classes\" ]; then\ncd ..\npython3 Scripts/design_token.py -p \"../${PRODUCT_NAME}/Classes/design.swift\" \"1\"\nfi",
       "execution_position": "before_compile"
     }
+  },
+  "resource_bundles": {
+    "MyUIKit": [
+      "MyUIKit/Assets/**.*"
+    ]
   }
 }
