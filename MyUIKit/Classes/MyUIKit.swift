@@ -10,7 +10,7 @@ import Foundation
 public var colors: MyColorProtocol { return MyUIKit.shared.colors }
 public var textStyles: MyTextStyleProtocol { return MyUIKit.shared.textStyles }
 
-final class MyUIKit {
+final public class MyUIKit {
     
     fileprivate var colors: MyColorProtocol!
     fileprivate var textStyles: MyTextStyleProtocol!

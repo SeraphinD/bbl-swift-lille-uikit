@@ -12,7 +12,7 @@ public protocol MyColorProtocol {
       
       func success(tint: Int) -> UIColor?
       
-      func informations(tint: Int) -> UIColor?
+      func information(tint: Int) -> UIColor?
       
       func warning(tint: Int) -> UIColor?
       
