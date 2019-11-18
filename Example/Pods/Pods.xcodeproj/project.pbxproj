@@ -23,6 +23,7 @@
 		B7DEE392F36E6AB3BF4CE8E99D6D307C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		BAFC357D9EAB71C5C346A4F7FE0125BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		C658C26F2382D9EE0082E3B7 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658C26E2382D9EE0082E3B7 /* UIView+Animations.swift */; };
+		C658C2712382E4D90082E3B7 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = C658C2702382E4D90082E3B7 /* UIImageView+Download.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		AD6E93C18FE6F016F2EE2440FD706ADC /* Pods-MyUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB39EA3743A2E7134629574537EB3571 /* Pods-MyUIKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyUIKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		C658C26E2382D9EE0082E3B7 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "MyUIKit/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
+		C658C2702382E4D90082E3B7 /* UIImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImageView+Download.swift"; path = "MyUIKit/Classes/UIImageView+Download.swift"; sourceTree = "<group>"; };
 		DCFB4661DE1ACE5375388511E7EBBA18 /* MyUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MyUIKit.modulemap; sourceTree = "<group>"; };
 		E6D72E09CA8D456DB0ECDFC5725CF9CA /* Pods-MyUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E6F9A0E6F8F2728668599DB3EF8AB77A /* Pods-MyUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyUIKit_Tests.modulemap"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				6F8B9035E7021EC0BA7CCE0E08A38239 /* Resources */,
 				239AEE4BB88E21A9734D712AFBAB5109 /* Support Files */,
 				C658C26E2382D9EE0082E3B7 /* UIView+Animations.swift */,
+				C658C2702382E4D90082E3B7 /* UIImageView+Download.swift */,
 			);
 			name = MyUIKit;
 			path = ../..;
@@ -462,6 +465,7 @@
 				13FC6B929119BA2BC0BE40708085AD26 /* MyUIKit-dummy.m in Sources */,
 				4C655574611E29DF75B703A9B2B12E6F /* MyUIKit.swift in Sources */,
 				46DFE1E13DD570D2AF37C9B4DFC6F814 /* UIImage+MyUIKit.swift in Sources */,
+				C658C2712382E4D90082E3B7 /* UIImageView+Download.swift in Sources */,
 				C658C26F2382D9EE0082E3B7 /* UIView+Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
