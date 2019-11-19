@@ -7,7 +7,7 @@ extension UIImage {
     }
 
     private class func image(named: String) -> UIImage! {
-        return UIImage(named: named, in: MyUIKit.bundle, compatibleWith: nil)
+        return UIImage(named: named, in: MyUIKit.shared.bundle, compatibleWith: nil)
     }
     
 }

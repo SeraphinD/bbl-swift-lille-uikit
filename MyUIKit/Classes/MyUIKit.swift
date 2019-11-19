@@ -11,7 +11,7 @@ final public class MyUIKit {
     private init() {}
     public static let shared = MyUIKit()
 
-    class var bundle: Bundle! {
+    var bundle: Bundle! {
         let podBundle: Bundle! = Bundle(for: MyUIKit.self)
         let bundleUrl: URL! = podBundle.url(forResource: "MyUIKit",
                                             withExtension: "bundle")
